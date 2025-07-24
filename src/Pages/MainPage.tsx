@@ -85,9 +85,8 @@ export default function MainPage() {
         <div>
             <div className="headerClass">
                 <div className="fileNameDiv">    
-                    <input className="fileNameInput" type="text" defaultValue={fileName} onChange={(str) => {
+                    <input id="fileInputName" className="fileNameInput" type="text" defaultValue={fileName} onChange={(str) => {
                         setFileName(str.target.value);
-                        console.log(str.target.value)
                     }}/>
                 </div>
                 
@@ -104,6 +103,13 @@ export default function MainPage() {
                             event.target.files[0].text().then((importedData) => {
                                 const temp = JSON.parse(importedData);
                                 setCanvasData(temp[1]);
+                                setFileName(temp[0]);
+                                {
+                                    const tempInput = document.getElementById("fileInputName") as HTMLInputElement;
+                                    if (tempInput != null) {
+                                        tempInput.value = temp[0];
+                                    }
+                                }
                             }).catch(() => console.log("couldn't read the imported file."))
                         }}></input>
                     </div>
