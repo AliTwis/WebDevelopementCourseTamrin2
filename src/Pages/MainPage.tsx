@@ -110,7 +110,7 @@ export default function MainPage() {
                                 }
                                 let newId = 0;
                                 for (let i = 0; i < temp[1].length; i++) {
-                                    if (temp[1][i].ind > newId) newId = temp[1][i].ind
+                                    if (temp[1][i].id > newId) newId = temp[1][i].id
                                 }
                                 setShapeId(newId + 1);
                             }).catch(() => console.log("couldn't read the imported file."))
