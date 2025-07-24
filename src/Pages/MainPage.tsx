@@ -104,12 +104,15 @@ export default function MainPage() {
                                 const temp = JSON.parse(importedData);
                                 setCanvasData(temp[1]);
                                 setFileName(temp[0]);
-                                {
-                                    const tempInput = document.getElementById("fileInputName") as HTMLInputElement;
-                                    if (tempInput != null) {
-                                        tempInput.value = temp[0];
-                                    }
+                                const tempInput = document.getElementById("fileInputName") as HTMLInputElement;
+                                if (tempInput != null) {
+                                    tempInput.value = temp[0];
                                 }
+                                let newId = 0;
+                                for (let i = 0; i < temp[1].length; i++) {
+                                    if (temp[1][i].ind > newId) newId = temp[1][i].ind
+                                }
+                                setShapeId(newId + 1);
                             }).catch(() => console.log("couldn't read the imported file."))
                         }}></input>
                     </div>
