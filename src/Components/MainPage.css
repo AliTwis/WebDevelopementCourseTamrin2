@@ -1,0 +1,112 @@
+.testP {
+    border: 2px black solid;
+    font-size: small;
+    display: flex;
+}
+
+.bodyClass {
+    display: flex;
+    flex-direction: row;
+    height: 600px;
+    border: 2px black solid;
+    position: relative;
+}
+
+.canvasAndCounter {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 10px;
+    border: 2px solid orange;
+}
+
+.canvas {
+    /* margin: 5%; */
+    width: 96%;
+    height: 70%;
+    margin: 2%;
+    border: 2px black solid;
+    position: relative;
+}
+
+.counter {
+    display: flex;
+    flex-direction: row;
+    height: 15%;
+    width: 96%;
+    margin: 2%;
+    border: 2px black solid;
+}
+
+.counterImageLabel {
+    /* top: 20%; */
+    position: relative; 
+    margin: 10%;
+}
+
+.imageCounterDivContainer {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    width: 30%;
+    margin: 5px;
+    top: 0;
+    /* border: 2px black solid; */
+}
+
+
+.tools {
+    width: 20%;
+    margin: 10px;
+    border: 2px black solid;
+    display: flex;
+    flex-direction: column;   
+    position: relative;
+}
+
+.imageToolDivContainer {
+    aspect-ratio: 1;
+    height: 25%;
+    margin: 5px;
+}
+
+.toolsImage {
+    margin: 5px;
+    height: 100%;
+    position: relative;
+}
+
+.headerClass {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    border: 2px solid pink;
+    height: 40px;
+}
+
+.fileNameDiv {
+    width: 70%;
+}
+
+.fileNameInput {
+    height: 50%;
+    margin: 5px;
+    
+}
+
+.headerButtonsDiv {
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+}
+
+.headerButtons {
+    margin: 5px;
+    position: relative;
+    width: 50%;
+}
+
+.importLabel {
+    border: 1px solid black;
+}
