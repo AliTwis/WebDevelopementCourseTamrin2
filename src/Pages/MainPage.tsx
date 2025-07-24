@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./MainPage.css"
-import Shape from "./Shape";
+import Shape from "../Components/Shape";
 import { shapeData } from "../DataTypes/ShapeDateType";
 
 export default function MainPage() {

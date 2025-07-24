@@ -3,7 +3,7 @@ import logo from './logo.svg';
 // import { Routes, Route } from "react-roouter-dom";
 import './App.css';
 import { Route, Routes } from 'react-router-dom';
-import MainPage from './Components/MainPage';
+import MainPage from './Pages/MainPage';
 
 function App() {
   return (
