@@ -41,7 +41,6 @@ export default function Shape(
     return (
         <div style={{ position: "absolute", left: x - changes[changeInd][0], top: y - changes[changeInd][1]}}>
             <img alt="pic" src={String(pic)} width={50} height={50} onDoubleClick={() => {
-                console.log("i was double clicked");
                 for (let i = 0; i < allShapes.length; i++) {
                     if (allShapes[i].id == id) {
                         const temp1 = allShapes.slice(0, i);

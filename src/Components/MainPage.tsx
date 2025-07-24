@@ -119,26 +119,17 @@ export default function MainPage() {
                 <div className="canvasAndCounter">
                     <div id="canvasId" className="canvas" onDragOver={(event) => { event.preventDefault() }}
                         onDrop={(event) => drawShapeDrop(event)} onClick={(event) => {
-                            console.log(event.detail);
                             if (event.detail === 1) {
                                 setTimeout(() => {
-                                    console.log(canvasDblClicked);
                                     if (canvasDblClicked) {
-                                        // setCanvasDblClicked(false);
                                         canvasDblClicked = false;
-                                        console.log("done with the timeout");
                                         return
                                     }
-                                    console.log("done with the timeout gonna draw");
-                                    // setCanvasDblClicked(false);
                                     canvasDblClicked = false;
-                                    console.log("gonna draw " + canvasDblClicked);
                                     drawShapeClick(event);
                                 }, 400);
                             }
                             else if (event.detail === 2) {
-                                console.log("fuck you")
-                                // setCanvasDblClicked(true);
                                 canvasDblClicked = true;
                             }
                         }} >
